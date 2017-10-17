@@ -18,7 +18,7 @@
   - используя асинхронные сервлеты 3.0
 - сохранение данных в PostgreSQL используя [jDBI](http://jdbi.org/)
 - миграция базы [LiquiBase](http://www.liquibase.org/)
-- использование в проекте [Guava](https://github.com/google/guava/wiki), [Thymleaf](http://www.thymeleaf.org/), [Lombook](https://projectlombok.org/), [StreamEx](https://github.com/amaembo/streamex), 
+- использование в проекте [Guava](https://github.com/google/guava/wiki), [Thymleaf](http://www.thymeleaf.org/), [Lombok](https://projectlombok.org/), [StreamEx](https://github.com/amaembo/streamex), 
 [Typesafe Config](https://github.com/typesafehub/config), [Java Microbenchmark JMH](http://openjdk.java.net/projects/code-tools/jmh)
 
 ### Требование к участникам
@@ -134,14 +134,14 @@ MatrixBenchmark.concurrentMultiply3           1000    ss  100  186,827 ± 11,882
 - Maven. Поиск и разрешение конфликтов зависимостей
 - Подключаем логирование с общими настройкам
 - Библиотеки и фреймворки для работы с JDBC.
-- Модуль persist
+- Модуль persistence
 
 ## Занятие 5
 - Разбор ДЗ 
   - Сохранение в базу в batch-моде с обработкой конфликтов
   - Вставка в несколько потоков
 - Конфигурирование приложения (<a href="https://github.com/typesafehub/config">Typesafe config</a>)
-- Lombook
+- Lombok
 
 ## Занятие 6
 - Разбор ДЗ (доработка модели и модуля export)
