@@ -77,6 +77,7 @@
 #### Скачайте [1_1_MailService.patch](https://drive.google.com/open?id=0B9Ye2auQ_NsFTE5ZV3pzWElxTWM), положите его в проект, правой мышкой на нем сделайте Apply Patch ...
 
 ----------------------------
+- [Как сделать Java код проще и нагляднее](https://habrahabr.ru/company/wrike/blog/349652/)
 
 ### Ресурсы (основы)
 - Intuit, <a href="http://www.intuit.ru/studies/courses/16/16/lecture/27127">Потоки выполнения. Синхронизация</a>
