@@ -38,7 +38,7 @@
 > В видео в `LazySingleton` ошибка: должно быть как в коде проекта `instance == null`
 
 ### Структура памяти: куча, стек, permanent/metaspace
-  - <a href="https://www.slideshare.net/solit/jvm-16948708">JVM изнутри - оптимизация и профилирование</a>.
+  - <a href="https://documents.tips/technology/jvm-.html">JVM изнутри - оптимизация и профилирование</a>.
   - <a href="http://stackoverflow.com/questions/79923/what-and-where-are-the-stack-and-heap#24171266">Stack and Heap</a>
   - Дополнительно:
     - <a href="http://habrahabr.ru/post/117274/">Из каких частей состоит память java процесса</a>.
