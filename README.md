@@ -45,6 +45,9 @@
     - <a href="http://www.javaspecialist.ru/2011/04/permanent.html">Permanent область памяти</a>
     - <a href="http://www.javaspecialist.ru/2011/04/java-thread-stack.html">Java thread stack </a>
     - <a href="http://habrahabr.ru/post/134102/">Размер Java объектов</a>
+  - Оптимизация памяти
+    - [Escape analysis и скаляризация: Пусть GC отдохнет](https://habr.com/company/jugru/blog/322348)
+    - [Условия для размещения объекта в стеке](https://stackoverflow.com/a/43002529/548473)
 
 ### Ленивая инициализация
 - <a href="https://habrahabr.ru/post/27108/">Реализация Singleton в JAVA</a>
