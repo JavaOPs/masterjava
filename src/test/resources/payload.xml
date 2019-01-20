@@ -1,0 +1,23 @@
+<Payload xmlns="http://javaops.ru"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://javaops.ru payload.xsd">
+    <Users>
+        <User flag="active" city="kiv">
+            <email>gmail@gmail.com</email>
+            <fullName>Full Name</fullName>
+        </User>
+        <User flag="superuser" city="spb">
+            <email>admin@javaops.ru</email>
+            <fullName>Admin</fullName>
+        </User>
+        <User flag="deleted" city="spb">
+            <email>mail@yandex.ru</email>
+            <fullName>Deleted</fullName>
+        </User>
+    </Users>
+    <Cities>
+        <City id="spb">Санкт-Петербург</City>
+        <City id="kiv">Киев</City>
+        <City id="mnsk">Минск</City>
+    </Cities>
+</Payload>
