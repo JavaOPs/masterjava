@@ -96,6 +96,9 @@
 Вычекать этот проект:
 ```git clone  https://github.com/JavaOPs/masterjava.git```
 
+> - [Настройка git на свой репозиторий](https://github.com/JavaOPs/basejava/blob/master/lesson/lesson1.md#настройка-проекта)
+> - [Правила работы с патчами на проекте](https://github.com/JavaOPs/topjava/wiki/Git)
+
 - Применить <a href="https://habrahabr.ru/post/114797/">оптимизацию</a> к MatrixUtil.singleThreadMultiply
 - Реализовать метод `MatrixUtil.concurrentMultiply`, позволяющий многопоточно <a href="https://ru.wikipedia.org/wiki/Умножение_матриц">перемножать квадратные матрицы N*N</a>.
 - Количество дочерних потоков ограничено `MainMatrix.THREAD_NUMBER`.
