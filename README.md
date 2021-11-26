@@ -78,7 +78,7 @@
 > правка к видео: `22:   completionService.submit(..)`
 
 ### ![](https://cloud.githubusercontent.com/assets/13649199/13672935/ef09ec1e-e6e7-11e5-9f79-d1641c05cbe6.png)  Все изменения в проекте будут делаться на основе патчей
-#### Скачайте [1_1_MailService.patch](https://drive.google.com/open?id=0B9Ye2auQ_NsFTE5ZV3pzWElxTWM), положите его в проект, правой мышкой на нем сделайте Apply Patch ...
+#### Скачайте [1_1_MailService.patch](https://drive.google.com/file/d/0B9Ye2auQ_NsFTE5ZV3pzWElxTWM/view?resourcekey=0-TF7H5aadPlE3aQukNC5Ejg), положите его в проект, правой мышкой на нем сделайте Apply Patch ...
 
 ----------------------------
 - [Как сделать Java код проще и нагляднее](https://habrahabr.ru/company/wrike/blog/349652/)
