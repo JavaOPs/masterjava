@@ -38,12 +38,13 @@
 > В видео в `LazySingleton` ошибка: должно быть как в коде проекта `instance == null`
 
 ### Структура памяти: куча, стек, permanent/metaspace
-  - <a href="https://documents.tips/technology/jvm-.html">JVM изнутри - оптимизация и профилирование</a>.
+  - <a href="https://www.slideshare.net/solit/jvm-16948708">JVM изнутри - оптимизация и профилирование</a>.
   - <a href="http://stackoverflow.com/questions/79923/what-and-where-are-the-stack-and-heap#24171266">Stack and Heap</a>
   - Дополнительно:
     - <a href="http://habrahabr.ru/post/117274/">Из каких частей состоит память java процесса</a>.
-    - <a href="http://www.javaspecialist.ru/2011/04/permanent.html">Permanent область памяти</a>
-    - <a href="http://www.javaspecialist.ru/2011/04/java-thread-stack.html">Java thread stack </a>
+    - <a href="https://devsday.ru/blog/details/825">Permanent область памяти</a>
+    > Замечание: [с JDK 7 String Pool переехал в Heap](https://topjava.ru/blog/rukovodstvo-po-string-pool-v-java)
+    - [Стек и куча в Java](https://topjava.ru/blog/stack-and-heap-in-java)
     - <a href="http://habrahabr.ru/post/134102/">Размер Java объектов</a>
   - Оптимизация памяти
     - [Escape analysis и скаляризация: Пусть GC отдохнет](https://habr.com/company/jugru/blog/322348)
@@ -67,6 +68,7 @@
 - <a href="http://articles.javatalks.ru/articles/17">Использование ThreadLocal переменных</a>
 - <a href="https://www.youtube.com/watch?v=8piqauDj2yo">Николай Алименков — Прикладная многопоточность</a>
 - <a href="http://stackoverflow.com/questions/20163056/in-java-can-thread-switching-happen-in-the-synchronized-block">Can thread switching happen in the synchronized block?</a>
+- [The Deadlock Empire](https://deadlockempire.github.io/)
 - [Реактивное программирование - как, зачем и стоит ли?](https://habr.com/ru/company/oleg-bunin/blog/543386/)
 
 #### Tproger: Многопоточное программирование в Java 8
@@ -96,6 +98,7 @@
 - Юрий Ткач, курс <a href="https://www.youtube.com/playlist?list=PL6jg6AGdCNaXo06LjCBmRao-qJdf38oKp">Advanced Java - Concurrency</a>
 - Головач, курс <a href="https://www.youtube.com/playlist?list=PLoij6udfBncgVRq487Me6yQa1kqtxobZS">Java Multithreading</a>
 - [Перевод «Java Memory Model»](https://habr.com/ru/post/510454/)
+
 ---
 ## ![hw](https://cloud.githubusercontent.com/assets/13649199/13672719/09593080-e6e7-11e5-81d1-5cb629c438ca.png) Задание первого занятия
 
@@ -106,9 +109,9 @@
 
 -----
 ## ![error](https://cloud.githubusercontent.com/assets/13649199/13672935/ef09ec1e-e6e7-11e5-9f79-d1641c05cbe6.png) Подсказки по HW1
-- 1: не делайте 1000 000 тасок, лучше их сделать крупнее
-- 2: у меня разница между 4 и 1000 тасками по времени незаметна, поэтому делайте просто и не делайте сложно
-- 3: наконец: можно не считать значение элемента результирующей матрицы C за раз, а накапливать (`concurrentMultiply3`). Тогда трансформация B не нужна. Мои результаты:
+- не делайте 1000 000 тасок, лучше их сделать крупнее
+- у меня разница между 4 и 1000 тасками по времени незаметна, поэтому делайте просто и не делайте сложно
+- наконец: можно не считать значение элемента результирующей матрицы C за раз, а накапливать (`concurrentMultiply3`). Мои результаты:
 ```
 Benchmark                             (matrixSize)  Mode  Cnt    Score    Error  Units
 MatrixBenchmark.singleThreadMultiplyOpt       1000    ss  100  837,867 ± 25,530  ms/op
