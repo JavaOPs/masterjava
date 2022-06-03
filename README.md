@@ -18,7 +18,7 @@
   - используя асинхронные сервлеты 3.0
 - сохранение данных в PostgreSQL используя [jDBI](http://jdbi.org/)
 - миграция базы [LiquiBase](http://www.liquibase.org/)
-- использование в проекте [Guava](https://github.com/google/guava/wiki), [Thymleaf](http://www.thymeleaf.org/), [Lombook](https://projectlombok.org/), [StreamEx](https://github.com/amaembo/streamex), 
+- использование в проекте [Guava](https://github.com/google/guava/wiki), [Thymleaf](http://www.thymeleaf.org/), [Lombok](https://projectlombok.org/), [StreamEx](https://github.com/amaembo/streamex), 
 [Typesafe Config](https://github.com/typesafehub/config), [Java Microbenchmark JMH](http://openjdk.java.net/projects/code-tools/jmh)
 
 ### Требование к участникам
@@ -38,13 +38,16 @@
 > В видео в `LazySingleton` ошибка: должно быть как в коде проекта `instance == null`
 
 ### Структура памяти: куча, стек, permanent/metaspace
-  - <a href="https://www.slideshare.net/solit/jvm-16948708">JVM изнутри - оптимизация и профилирование</a>.
+  - <a href="https://documents.tips/technology/jvm-.html">JVM изнутри - оптимизация и профилирование</a>.
   - <a href="http://stackoverflow.com/questions/79923/what-and-where-are-the-stack-and-heap#24171266">Stack and Heap</a>
   - Дополнительно:
     - <a href="http://habrahabr.ru/post/117274/">Из каких частей состоит память java процесса</a>.
     - <a href="http://www.javaspecialist.ru/2011/04/permanent.html">Permanent область памяти</a>
     - <a href="http://www.javaspecialist.ru/2011/04/java-thread-stack.html">Java thread stack </a>
     - <a href="http://habrahabr.ru/post/134102/">Размер Java объектов</a>
+  - Оптимизация памяти
+    - [Escape analysis и скаляризация: Пусть GC отдохнет](https://habr.com/company/jugru/blog/322348)
+    - [Условия для размещения объекта в стеке](https://stackoverflow.com/a/43002529/548473)
 
 ### Ленивая инициализация
 - <a href="https://habrahabr.ru/post/27108/">Реализация Singleton в JAVA</a>
@@ -64,6 +67,7 @@
 - <a href="http://articles.javatalks.ru/articles/17">Использование ThreadLocal переменных</a>
 - <a href="https://www.youtube.com/watch?v=8piqauDj2yo">Николай Алименков — Прикладная многопоточность</a>
 - <a href="http://stackoverflow.com/questions/20163056/in-java-can-thread-switching-happen-in-the-synchronized-block">Can thread switching happen in the synchronized block?</a>
+- [Реактивное программирование - как, зачем и стоит ли?](https://habr.com/ru/company/oleg-bunin/blog/543386/)
 
 #### Tproger: Многопоточное программирование в Java 8
 - <a href="https://tproger.ru/translations/java8-concurrency-tutorial-1/">1. Параллельное выполнение кода с помощью потоков</a>
@@ -73,10 +77,16 @@
 ## ![video](https://cloud.githubusercontent.com/assets/13649199/13672715/06dbc6ce-e6e7-11e5-81a9-04fbddb9e488.png) 4. <a href="https://www.youtube.com/watch?v=AEhIh2qd-FM">Реализация многопоточной отправки писем. Execution Framework</a>
 > правка к видео: `22:   completionService.submit(..)`
 
-### ![](https://cloud.githubusercontent.com/assets/13649199/13672935/ef09ec1e-e6e7-11e5-9f79-d1641c05cbe6.png)  Все изменения в проекте будут делаться на основе патчей
-#### Скачайте [1_1_MailService.patch](https://drive.google.com/open?id=0B9Ye2auQ_NsFTE5ZV3pzWElxTWM), положите его в проект, правой мышкой на нем сделайте Apply Patch ...
+Вычекать этот проект:
+```git clone  https://github.com/JavaOPs/masterjava.git```
+
+> - [Настройка git на свой репозиторий](https://github.com/JavaOPs/basejava/blob/master/lesson/lesson1.md#настройка-проекта)
+> - [Правила работы с патчами на проекте](https://github.com/JavaOPs/topjava/wiki/Git)
+
+#### Все изменения в проекте будут делаться на основе патчей: скачайте [1_1_MailService.patch](https://drive.google.com/open?id=0B9Ye2auQ_NsFTE5ZV3pzWElxTWM), положите его в проект, правой мышкой на нем сделайте Apply Patch ...
 
 ----------------------------
+- [Как сделать Java код проще и нагляднее](https://habrahabr.ru/company/wrike/blog/349652/)
 
 ### Ресурсы (основы)
 - Intuit, <a href="http://www.intuit.ru/studies/courses/16/16/lecture/27127">Потоки выполнения. Синхронизация</a>
@@ -85,12 +95,9 @@
 - Computer Science Center, курс <a href="https://compscicenter.ru/courses/hp-course/2016-spring">Параллельное программирование</a>
 - Юрий Ткач, курс <a href="https://www.youtube.com/playlist?list=PL6jg6AGdCNaXo06LjCBmRao-qJdf38oKp">Advanced Java - Concurrency</a>
 - Головач, курс <a href="https://www.youtube.com/playlist?list=PLoij6udfBncgVRq487Me6yQa1kqtxobZS">Java Multithreading</a>
-
+- [Перевод «Java Memory Model»](https://habr.com/ru/post/510454/)
 ---
 ## ![hw](https://cloud.githubusercontent.com/assets/13649199/13672719/09593080-e6e7-11e5-81d1-5cb629c438ca.png) Задание первого занятия
-
-Вычекать этот проект:
-```git clone  https://github.com/JavaOPs/masterjava.git```
 
 - Применить <a href="https://habrahabr.ru/post/114797/">оптимизацию</a> к MatrixUtil.singleThreadMultiply
 - Реализовать метод `MatrixUtil.concurrentMultiply`, позволяющий многопоточно <a href="https://ru.wikipedia.org/wiki/Умножение_матриц">перемножать квадратные матрицы N*N</a>.
@@ -99,9 +106,9 @@
 
 -----
 ## ![error](https://cloud.githubusercontent.com/assets/13649199/13672935/ef09ec1e-e6e7-11e5-9f79-d1641c05cbe6.png) Подсказки по HW1
-- не делайте 1000 000 тасок, лучше их сделать крупнее
-- у меня разница между 4 и 1000 тасками по времени незаметна, поэтому делайте просто и не делайте сложно
-- наконец: можно не считать значение элемента результирующей матрицы C за раз, а накапливать (`concurrentMultiply3`). Мои результаты:
+- 1: не делайте 1000 000 тасок, лучше их сделать крупнее
+- 2: у меня разница между 4 и 1000 тасками по времени незаметна, поэтому делайте просто и не делайте сложно
+- 3: наконец: можно не считать значение элемента результирующей матрицы C за раз, а накапливать (`concurrentMultiply3`). Тогда трансформация B не нужна. Мои результаты:
 ```
 Benchmark                             (matrixSize)  Mode  Cnt    Score    Error  Units
 MatrixBenchmark.singleThreadMultiplyOpt       1000    ss  100  837,867 ± 25,530  ms/op
@@ -134,14 +141,14 @@ MatrixBenchmark.concurrentMultiply3           1000    ss  100  186,827 ± 11,882
 - Maven. Поиск и разрешение конфликтов зависимостей
 - Подключаем логирование с общими настройкам
 - Библиотеки и фреймворки для работы с JDBC.
-- Модуль persist
+- Модуль persistence
 
 ## Занятие 5
 - Разбор ДЗ 
   - Сохранение в базу в batch-моде с обработкой конфликтов
   - Вставка в несколько потоков
 - Конфигурирование приложения (<a href="https://github.com/typesafehub/config">Typesafe config</a>)
-- Lombook
+- Lombok
 
 ## Занятие 6
 - Разбор ДЗ (доработка модели и модуля export)
