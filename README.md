@@ -85,7 +85,7 @@
 > - [Настройка git на свой репозиторий](https://github.com/JavaOPs/basejava/blob/master/lesson/lesson1.md#настройка-проекта)
 > - [Правила работы с патчами на проекте](https://github.com/JavaOPs/topjava/wiki/Git)
 
-#### Все изменения в проекте будут делаться на основе патчей: скачайте [1_1_MailService.patch](https://drive.google.com/open?id=0B9Ye2auQ_NsFTE5ZV3pzWElxTWM), положите его в проект, правой мышкой на нем сделайте Apply Patch ...
+#### Все изменения в проекте будут делаться на основе патчей: скачайте [1_1_MailService.patch](https://drive.google.com/file/d/0B9Ye2auQ_NsFTE5ZV3pzWElxTWM/view?resourcekey=0-TF7H5aadPlE3aQukNC5Ejg), положите его в проект, правой мышкой на нем сделайте Apply Patch ...
 
 ----------------------------
 - [Как сделать Java код проще и нагляднее](https://habrahabr.ru/company/wrike/blog/349652/)
